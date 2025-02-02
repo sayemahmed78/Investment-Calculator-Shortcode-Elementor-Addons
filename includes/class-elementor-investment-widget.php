@@ -54,10 +54,12 @@ class Elementor_Investment_Calculator_Widget extends \Elementor\Widget_Base {
 
             <button id="calculate-investment"><?php echo esc_html($settings['button_text']); ?></button>
 
-            <h3>Results:</h3>
-            <p>Total Investment: $<span id="total-investment">0</span></p>
-            <p>Interest Earned: $<span id="interest-earned">0</span></p>
-            <p>Final Balance: $<span id="final-balance">0</span></p>
+            <div class="results-container">
+                <h3>Results:</h3>
+                <p>Total Investment: $ <span id="total-investment">0</span></p>
+                <p>Interest Earned: $ <span id="interest-earned">0</span></p>
+                <p>Final Balance: $ <span id="final-balance">0</span></p>
+            </div>
         </div>
         <?php
     }
